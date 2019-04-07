@@ -1,39 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
-
-  <!-- Theme: Simple -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-  <link rel="stylesheet" href="./css/theme-simple.css">
-
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./css/theme-simple.css">
 </head>
+
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: ''
-    }
-  </script>
-  <script>
-    window.$docsify = {
-      loadSidebar: true,
-	  subMaxLevel: 4
-    }
-  </script>
-  <!-- docsify原始 -->
-  <script src="./js/docsify.min.js"></script>
-  <!-- 圖片縮放外掛 https://github.com/francoischalifour/medium-zoom -->
-  <script src="./js/zoom-image.js"></script>
-  <!-- 程式碼高亮外掛 https://github.com/PrismJS/prism/tree/gh-pages/components -->
-  <script src="./js/prism-bash.js"></script>
-  <!-- 複製程式碼外掛 https://github.com/jperasmus/docsify-copy-code -->
-  <script src="./js/docsify-copy-code.min.js"></script>
+    <div id="app">Please wait...</div>
+
+    <script>
+        window.$docsify = {
+            name: '',
+            repo: '',
+            loadSidebar: true,
+            subMaxLevel: 4,
+            plugins: [
+                function (hook) {
+                    var footer = [
+                        '<hr/>',
+                        '<footer>',
+                        '<span><a href="https://github.com/QingWei-Li">cinwell</a> &copy;2019 </span>',
+                        '<span>published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+                        '</footer>'
+                    ].join('')
+
+                    hook.afterEach(function (html) {
+                        return html + footer
+                    })
+                }
+            ],
+
+            search: {
+                maxAge: 86400000,      //過期時間,單位毫秒,預設一天
+                paths: 'auto',          
+                placeholder: '搜尋',    
+                noData: '找不到结果',   
+                depth: 3               //搜尋標題最大目錄層級1-6
+            }          
+        }
+    </script>
+
+    <script src="./js/docsify.min.js"></script>             <!-- docsify.min原始 -->
+    <script src="./js/search.js"></script>                  <!-- 搜尋外掛 -->
+    <script src="./js/zoom-image.js"></script>              <!-- 圖片縮放外掛 https://github.com/francoischalifour/medium-zoom -->
+    <script src="./js/prism-bash.js"></script>              <!-- 程式碼高亮外掛 https://github.com/PrismJS/prism/tree/gh-pages/components -->
+    <script src="./js/docsify-copy-code.min.js"></script>   <!-- 複製程式碼外掛 https://github.com/jperasmus/docsify-copy-code -->
 </body>
+
 </html>
