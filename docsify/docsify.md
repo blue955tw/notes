@@ -7,14 +7,15 @@ https://docsify.js.org/#/zh-cn/quickstart
 ```bash
 ~$ npm i docsify-cli -g
 ```
-初始化項目 `./docs` 端看你的資料夾名稱，做適時修改。
+初始化項目 `./docs` 端看你的資料夾名稱，做適時修改。</br>
+如果你已經初始化過了，不要再執行這個指令，會重新覆蓋你的 `index.html` `README.md` 檔案。
 
 ```bash
 ~$ docsify init ./docs
 ```
 
-預覽項目
+啟動預覽項目
 
 ```bash
-~$ docsify serve docs
+~$ docsify serve ./docs
 ```
