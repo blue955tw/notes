@@ -7,7 +7,7 @@ https://docsify.js.org/#/zh-cn/quickstart
 ```bash
 ~$ npm i docsify-cli -g
 ```
-初始化項目./docs端看你的資料夾名稱，做適時修改。
+初始化項目 `./docs` 端看你的資料夾名稱，做適時修改。
 
 ```bash
 ~$ docsify init ./docs
