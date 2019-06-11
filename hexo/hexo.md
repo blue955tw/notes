@@ -76,3 +76,29 @@ tz: 2018e
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
+
+## 配置
+修改 `_config.yml`
+
+https://hexo.io/zh-tw/docs/configuration
+
+### 網站
+設定         | 描述
+------------|-----------
+title        | 網站標題
+subtitle     | 網站副標題
+description  | 網站描述
+author       | 您的名字
+language     | 網站使用的語言，參考 [2-lettter ISO-639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)，預設為 en
+timezone     | 網站時區，Hexo 預設使用您電腦的時區，您可以在 [時區列表](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) 尋找適當的時區，例如 America/New_York ，Japan 與 UTC
+
+### 網址
+設定                | 描述                                                          |預設值
+------------------|----------------------------------------------------------|----
+url                 | 網站的網址                                                    |
+root                | 網站的根目錄                                                  |
+permalink           | 文章 [永久連結](https://hexo.io/zh-tw/docs/permalinks) 的格式 | :year/:month/:day/:title/
+permalink_defaults  | permalink 中各區段的預設值                                    |
+
+
+
