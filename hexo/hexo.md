@@ -2,7 +2,7 @@
 
 https://hexo.io/zh-tw/
 
-必須先安裝好 [安裝 NodeJS 與 NPM](cygwin/cygwin.md#安裝-nodejs-與-npm)
+必須先安裝好 [安裝 NodeJS 與 NPM](cygwin/cygwin.md#安裝-nodejs-與-npm "安裝 NodeJS 與 NPM")
 
 ## 安裝 Git
 
