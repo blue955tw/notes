@@ -1,3 +1,5 @@
 * [首頁](README.md)
+* [Finance](finance/finance.md)
 * [Cygwin](cygwin/cygwin.md)
-* [docsify](docsify/docsify.md)
+* [Docsify](docsify/docsify.md)
+* [Hexo](hexo/hexo.md)

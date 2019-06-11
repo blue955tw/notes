@@ -1,4 +1,4 @@
-﻿## 安裝 docsify
+﻿## 前言
 
 https://docsify.js.org/#/zh-cn/quickstart
 
@@ -7,17 +7,17 @@ https://docsify.js.org/#/zh-cn/quickstart
 ```bash
 ~$ npm i docsify-cli -g
 ```
-初始化項目 `./notes` 端看你的資料夾名稱，做適時修改。</br>
+初始化項目 `./docs` 端看你的資料夾名稱，做適時修改。</br>
 如果你已經初始化過了，不要再執行這個指令，會重新覆蓋你的 `index.html` `README.md` 檔案。
 
 ```bash
-~$ docsify init ./notes
+~$ docsify init ./docs
 ```
 
 啟動預覽項目
 
 ```bash
-~$ docsify serve ./notes
+~$ docsify serve ./docs
 ```
 
 GIT

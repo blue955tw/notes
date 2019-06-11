@@ -157,3 +157,14 @@ v10.15.3
 [user@local ~]$ npm -v
 6.4.1
 ```
+
+## 安裝 Hyper Terminal
+Hyper官網 https://hyper.is
+
+解決 Hyper Terminal 中文疊字問題
+
+```bash
+# 修改 .hyper.js
+# 找到並更改下列參數
+termCSS: '.wc-node.unicode-node{width: 1em}'
+```
